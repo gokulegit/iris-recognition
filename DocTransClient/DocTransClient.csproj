@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F029EC7-42C1-46BA-B3BE-F82AA5831629}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocTransClient</RootNamespace>
+    <AssemblyName>DocTransClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>76682f743ae018364a082b2e87f2d2f5.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisRecognition, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\IrisRecognition\IrisRecognition\distrib\IrisRecognition.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisRecognitionNative, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\IrisRecognition\IrisRecognition\distrib\IrisRecognitionNative.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MRG.Controls.UI, Version=1.0.2601.14400, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Sources\MRGLoadingCircledemo\MRG.WinForm.Test\bin\MRG.Controls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XPExplorerBar, Version=3.3.0.0, Culture=neutral, PublicKeyToken=26272737b5f33015" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CryptoHelp.cs" />
+    <Compile Include="FrmDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownload.Designer.cs">
+      <DependentUpon>FrmDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginC.Designer.cs">
+      <DependentUpon>FrmLoginC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMainC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMainC.Designer.cs">
+      <DependentUpon>FrmMainC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSendFileC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSendFileC.Designer.cs">
+      <DependentUpon>FrmSendFileC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowBox.Designer.cs">
+      <DependentUpon>FrmShowBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InboxWatcher.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDownload.resx">
+      <DependentUpon>FrmDownload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginC.resx">
+      <DependentUpon>FrmLoginC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMainC.resx">
+      <DependentUpon>FrmMainC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSendFileC.resx">
+      <DependentUpon>FrmSendFileC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowBox.resx">
+      <DependentUpon>FrmShowBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="st.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GTools\GTools.csproj">
+      <Project>{997A17A0-C952-440F-BB76-5D9FC90C1D29}</Project>
+      <Name>GTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="76682f743ae018364a082b2e87f2d2f5.ico" />
+    <None Include="app.config" />
+    <None Include="Resources\blueBG.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

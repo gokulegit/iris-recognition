@@ -1,0 +1,6 @@
+CREATE TABLE employees (eid nvarchar(50) PRIMARY KEY, ename nvarchar(MAX)null, phone nvarchar(50)null, img image null, imgkey nvarchar(50) null, groop nvarchar(50), iristemp image null);
+
+
+CREATE TABLE groups (gname nvarchar(50) PRIMARY KEY, mems int);
+
+INSERT INTO groups VALUES('General',0);

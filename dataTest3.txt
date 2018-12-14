@@ -1,0 +1,24 @@
+x)	1- 1.bmp = 
+	1- 2.bmp = 
+	1- 3.bmp = 
+		
+	2- 1.bmp = 
+	2- 2.bmp = 
+	2- 3.bmp = 
+	2- 4.bmp = 
+
+y)	1- 1.bmp = 
+	1- 2.bmp = 
+	1- 3.bmp = 
+		
+	2- 1.bmp = 
+	2- 2.bmp = 
+	2- 3.bmp = 
+	2- 4.bmp = 
+
+z)	1- 1.bmp = 
+	1- 2.bmp = 
+	1- 3.bmp = 
+
+	2- 1.bmp = 
+	2- 2.bmp = 
